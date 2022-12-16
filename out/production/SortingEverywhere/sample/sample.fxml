@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: White;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <VBox layoutX="45.0" layoutY="43.0" prefHeight="245.0" prefWidth="710.0">
+      <children>
+         <Label fx:id="name" alignment="CENTER" prefHeight="35.0" prefWidth="710.0">
+            <font>
+               <Font name="Arial" size="16.0" />
+            </font>
+         </Label>
+         <Pane fx:id="canvasPane" minHeight="180.0" minWidth="710.0" prefHeight="226.0" prefWidth="710.0" />
+      </children>
+   </VBox>
+   <Button fx:id="start" layoutX="75.0" layoutY="410.0" mnemonicParsing="false" onAction="#startSorting" prefHeight="45.0" prefWidth="75.0" style="-fx-background-color: #f7f7f7;" text="Start" />
+   <Button fx:id="reset" layoutX="160.0" layoutY="410.0" mnemonicParsing="false" onAction="#resetSorting" prefHeight="45.0" prefWidth="78.0" style="-fx-background-color: #f7f7f7;" text="Reset" />
+   <ComboBox fx:id="comboBox" layoutX="567.0" layoutY="415.0" onAction="#whichAlgo" prefHeight="36.0" prefWidth="163.0" promptText="Sorting Algorithms" style="-fx-background-color: #F4f4f4;" />
+   <ColorPicker fx:id="colorPicker" layoutX="75.0" layoutY="365.0" onAction="#changeColor" prefHeight="25.0" prefWidth="163.0" style="-fx-background-color: #f7f7f7;">
+      <value>
+         <Color />
+      </value></ColorPicker>
+   <ProgressIndicator fx:id="progressBar" layoutX="258.0" layoutY="385.0" maxHeight="50.0" maxWidth="50.0" minHeight="30.0" minWidth="30.0" prefHeight="50.0" prefWidth="50.0" progress="0.0" style="-fx-progress-color: rgb(0,0,255);" />
+</Pane>
